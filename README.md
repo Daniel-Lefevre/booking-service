@@ -172,3 +172,4 @@ run by the CI server instead of by you.
 > Gate-policy lesson: Bandit rates the `eval` RCE only **Medium**, so a
 > High-only gate would let that remote-code-execution bug through. The
 > threshold you choose is itself a security decision.
+ 
