@@ -27,3 +27,7 @@ jobs:
       # SCA gate: pip-audit exits non-zero if any dependency has a known CVE.
       - name: SCA (pip-audit) - fail on known CVEs
         run: pip-audit -r requirements.txt
+
+      # Fuzzing tool
+      - name: FUZZ (fuzz_simple.py) - Fail on Crash
+        run: python fuzz_simple.py
