@@ -31,7 +31,7 @@ def main():
             print(f"CRASH after {i} inputs")
             print(f"  input   : {code!r}")
             print(f"  exception: {type(exc).__name__}: {exc}")
-            return
+            raise SystemExit(1)
     print("No crash found (unexpected for this demo).")
 
 
